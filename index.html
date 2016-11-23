@@ -1,0 +1,286 @@
+<!doctype html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700|Ubuntu+Mono" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    footer {
+      border-top: solid 1px #ddd;
+    }
+
+    #header, footer {
+      background-image: linear-gradient(45deg, #a00, #e66);
+      width: 100%;
+      font-family: Lato, helvetica, arial, sans-serif;
+      font-weight: 300;
+      text-transform: lowercase;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 0.8);
+      padding-left: 75px;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+
+    #header {
+      margin: 0;
+      left: 0px;
+      top: 0px;
+      height: 40px;
+      padding-top: 8px;
+      border-bottom: solid 1px black;
+    }
+
+    #header a {
+      text-decoration: none;
+    }
+
+    #header a:hover {
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      text-align: left;
+      padding-left: 2em;
+    }
+
+    nav ul li:first-child {
+      padding-left: 0;
+    }
+
+    footer {
+      height: 30px;
+      margin-bottom: 0;
+      padding-top: 6px;
+      font-size: 75%;
+    }
+
+    #hero {
+      position: relative; /* allow the logo and slogan to be positioned absolutely */
+      font-family: Montserrat, arial, sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    #hero #hero-background {
+      width: 100%;
+      height: auto;
+      border-bottom: solid 1px black;
+    }
+
+    #hero #logo {
+      position: absolute;
+      top: 55px;
+      left: 75px;
+      margin-left: -12px; /* the left margin within the logo image is 12px wide */
+    }
+
+    #hero .unicode-heart {
+      font-family: Times New Roman;
+      font-size: 130%;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: Montserrat, helvetica, arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    #hero h2 {
+      position: absolute;
+      margin: 0;
+      top: 178px;
+      left: 75px;
+      letter-spacing: 2px;
+    }
+
+    #hero {
+      /* Since the hero image auto-resizes, any slop should match the first section's background. */
+      background-color: #eee;
+    }
+
+    .body {
+      background-color: #eee;
+    }
+
+    .body .contents {
+      width: 100%;
+    }
+
+    .body .contents {
+      max-width: 800px;
+      margin: auto;
+      padding: 1em 0 6em 0;
+      text-align: center;
+    }
+
+    #easy-parallelism {
+      background-color: #f8d0c0;
+      border-top: solid 1px #ccc;
+      border-bottom: solid 1px #ddd;
+    }
+
+    #crash-free-memory-management {
+      background-color: #ddd;
+      border-top: solid 1px #ccc;
+    }
+
+    .body .contents h1 {
+      margin-top: 2em;
+    }
+
+    .body .contents h1 {
+      font-size: 36pt;
+    }
+
+    .body .contents p {
+      font-family: Lato, helvetica, arial, sans-serif;
+      font-weight: 300;
+      font-size: 36px;
+      margin: 1em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    #console {
+    }
+
+    .body .contents pre {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 24px;
+      text-align: left;
+      border-radius: 4px;
+      border: 2px solid #222;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      background-color: rgb(51, 51, 51);
+      color: rgba(255, 255, 255, 0.9);
+      padding: 1em;
+      margin: 3em 1em 1em 1em;
+      font-family: "Ubuntu Mono", Consolas, Monaco, monospace;
+      font-weight: normal;
+    }
+
+    iframe {
+      margin-top: 2em;
+    }
+
+    .body .contents pre a {
+      text-decoration: none;
+    }
+
+    .body .contents pre a:hover {
+      text-decoration: underline;
+    }
+
+    .kw {
+      font-weight: bold;
+      color: #669;
+    }
+
+    .str {
+      color: #0a0;
+    }
+
+    .fn {
+      color: #8cf;
+    }
+
+    .prompt, .comment {
+      color: rgb(102, 102, 102);
+    }
+  </style>
+</head>
+
+<body>
+  <nav id=header>
+    <ul>
+      <li><a href="guide.html">Guide</a>
+      <li><a href="neon/index.html">Documentation</a>
+      <li><a href="https://github.com/rustbridge/neon">Source</a>
+      <li><a href="contributing.html">Contributing</a>
+    </ul>
+  </nav>
+
+  <section id=hero>
+    <img id=hero-background src="hero.jpg"><img id=logo src="logo.png"><h2>Node.js + Rust = <span class=unicode-heart>&#10084;</span></h2>
+  </section>
+
+  <section class=body id=hack-without-fear>
+    <div class=contents>
+      <h1>Don&rsquo;t Let Node Plugins Scare You!</h1>
+
+      <p>Neon makes writing native Node.js modules safe and fun, so you can <strong>hack without fear</strong>.<p>
+
+      <pre id=console><span class=comment># <a href="https://rustup.rs">Install Rust</a>.</span>
+<span class=prompt>$</span> curl https://sh.rustup.rs -sSf | sh
+
+<span class=comment># Install the Neon CLI.</span>
+<span class=prompt>$</span> npm install --global neon-cli
+
+<span class=comment># Create a new project!</span>
+<span class=prompt>$</span> neon new my-project</pre>
+    </div>
+  </section>
+
+  <section class=body id=crash-free-memory-management>
+    <div class=contents>
+      <h1>Crash-Free Memory Management</h1>
+
+      <p>Neon integrates with the V8 garbage collector automatically and safely, so memory handles are always properly tracked.<p>
+
+      <pre><span class=kw>fn</span> <span class=fn>hello</span>(call: Call) -> JsResult&lt;JsString&gt; {
+    <span class=comment>// safely tracked throughout this function!</span>
+    <span class=kw>let</span> val = JsString::<span class=fn>new</span>(call.scope, <span class=str>"hello, Node"</span>)
+                       .<span class=fn>unwrap</span>());
+    <span class=comment>...</span>
+    Ok(val)
+}</pre>
+    </div>
+  </section>
+
+  <section class=body id=easy-parallelism>
+    <div class=contents>
+      <h1>Easy Parallelism</h1>
+
+      <p>Safely run multithreaded Rust, which is easy with convenient parallel APIs like <a href="https://github.com/nikomatsakis/rayon">Rayon</a>.<p>
+
+      <pre>lines.<span class=fn>into_par_iter</span>()             <span class=comment>// iterate in parallel</span>
+     .<span class=fn>map</span>(|line| <span class=fn>wc</span>(line, word))  <span class=comment>// count words for each</span>
+     .<span class=fn>sum</span>()                       <span class=comment>// calculate the total</span></pre>
+
+    </div>
+  </section>
+
+  <section class=body id=learn-more>
+    <div class=contents>
+      <h1>Learn More</h1>
+
+      <p>Neon is a work in progress. Watch this talk to learn more about the state of the project:</p>
+
+      <iframe width="640" height="380" src="https://www.youtube.com/embed/jINMIAicaS0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer>
+    Image credits: <a href="https://unsplash.com/search/city?photo=l1sqXJXBgd0">Gabriel Santiago</a>
+  </footer>
+</body>
