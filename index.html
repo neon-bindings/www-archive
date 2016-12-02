@@ -103,6 +103,14 @@
       margin-left: -12px; /* the left margin within the logo image is 12px wide */
     }
 
+    #construction {
+      display: block;
+      position: absolute;
+      pointer-events: none;
+      right: 0;
+      top: 0;
+    }
+
     #hero .unicode-heart {
       font-family: Times New Roman;
       font-size: 130%;
@@ -125,6 +133,7 @@
     }
 
     .body {
+      position: relative;
       background-color: #eee;
     }
 
@@ -136,22 +145,22 @@
     }
 
     #hack-without-fear {
-      background-color: #fbfbef; /* yellow */
+      background-color: white;
     }
 
     #crash-free-memory-management {
-      background-color: #f8e8f8; /* violet */
+      background-color: #ffeeff; /* violet */
       border-top: solid 1px #ccc;
     }
 
     #easy-parallelism {
-      background-color: #f0f8f0; /* green */
+      background-color: white;
       border-top: solid 1px #ccc;
       border-bottom: solid 1px #ccc;
     }
 
     #learn-more {
-      background-color: #eaecff; /* blue */
+      background-color: #ffeeff; /* violet */
     }
 
     .body .contents h1 {
@@ -168,7 +177,13 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    #console {
+    .body .contents p#overview {
+      margin-bottom: 0.25em;
+    }
+
+    .body .contents p#wip-fine-print {
+      font-size: 1rem;
+      margin-top: 0;
     }
 
     .body .contents pre {
@@ -180,7 +195,7 @@
       border: 2px solid #222;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
       background-color: rgb(51, 51, 51);
-      color: white; /*rgba(255, 255, 255, 0.9);*/
+      color: white;
       padding: 1em;
       margin: 3em 1em 1em 1em;
       font-family: "Ubuntu Mono", Consolas, Monaco, monospace;
@@ -215,6 +230,7 @@
     .prompt, .comment {
       color: rgb(102, 102, 102);
     }
+
   </style>
 </head>
 
@@ -229,14 +245,18 @@
   </nav>
 
   <section id=hero>
-    <div id=hero-wrapper><img id=hero-background src="hero.jpg"></div><img id=logo src="logo.png"><h2>Node.js + Rust = <span class=unicode-heart>&#10084;</span></h2>
+    <div id=hero-wrapper><img id=hero-background src="hero.jpg"></div><img id=logo src="logo.png"><h2>Rust <span class=unicode-heart>&#10084;</span> Node</h2>
   </section>
+
+  <img id=construction src="construction.png">
 
   <section class=body id=hack-without-fear>
     <div class=contents>
       <h1>Don&rsquo;t Let Node Plugins Scare You!</h1>
 
-      <p>Neon makes writing native Node.js modules safe and fun, so you can <strong>hack without fear</strong>.<p>
+      <p id=overview>Neon makes writing native Node.js modules safe and fun, so you can <strong>hack without fear</strong>.</p>
+
+      <p id=wip-fine-print>(Work in progress! See the <a href="https://github.com/neon-bindings/neon/issues/666">safety checklist issue</a> to track our progress.)</p>
 
       <pre id=console><span class=comment># <a href="https://rustup.rs">Install Rust</a>.</span>
 <span class=prompt>$</span> curl https://sh.rustup.rs -sSf | sh
