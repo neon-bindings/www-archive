@@ -279,7 +279,7 @@
       <pre><span class=kw>fn</span> <span class=fn>hello</span>(call: Call) &rarr; JsResult&lt;JsString&gt; {
     <span class=comment>// safely tracked throughout this function!</span>
     <span class=kw>let</span> val = JsString::<span class=fn>new</span>(call.scope, <span class=str>"hello, Node"</span>)
-                       .<span class=fn>unwrap</span>());
+                       .<span class=fn>unwrap</span>();
     <span class=comment>...</span>
     Ok(val)
 }</pre>
