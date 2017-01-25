@@ -32,3 +32,10 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+
+#Docs Sections
+collections:
+  starter:
+  guide:
+  advanced:
