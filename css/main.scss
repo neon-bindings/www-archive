@@ -23,12 +23,8 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// HDC Colors
-$hdc-first: #2F2933;
-$hdc-second: #01A2A6;
-$hdc-third: #29D9C2;
-$hdc-fourth: lighten(#BDF271, 15%);
-$hdc-fifth: lighten(#FFFFA6, 15%);
+// Main Colors
+$main-color1: #e7ff93;
 
 // Width of the content area
 $content-width:    800px;

@@ -1,7 +1,7 @@
 ---
 layout: doc_page
 order: 1
-title: Getting Started
+title: Simple Example
 ---
 
 Hello World!

@@ -18,5 +18,31 @@ html, body {
   .site-main-jumbo-header {
     margin-bottom: 8rem;
   }
+}
 
+.site-doc-jumbo {
+  margin-bottom: 0;
+}
+
+.site-main-jumbo, .site-doc-jumbo {
+  background-color: $main-color1;
+}
+
+.site-doc-nav, .site-doc-page {
+  padding:3rem;
+}
+
+.site-doc-nav {
+  background-color: #afafaf;
+
+  ul {
+    list-style: none;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.site-footer-heading, .site-footer-sub {
+  padding: 1rem 0 0;
 }

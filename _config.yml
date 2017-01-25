@@ -37,8 +37,8 @@ exclude:
 #Docs Sections
 collections:
   starter:
+    title: "Getting Started"
     output: true
   guide:
-    output: true
-  advanced:
+    title: "Guide"
     output: true
