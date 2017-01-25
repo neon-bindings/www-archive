@@ -39,4 +39,6 @@ collections:
   starter:
     output: true
   guide:
+    output: true
   advanced:
+    output: true
