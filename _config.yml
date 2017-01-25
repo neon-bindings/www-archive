@@ -37,5 +37,6 @@ exclude:
 #Docs Sections
 collections:
   starter:
+    output: true
   guide:
   advanced:
