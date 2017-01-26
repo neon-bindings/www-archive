@@ -6,11 +6,18 @@ html, body {
   width: 100%;
 }
 
+.site-header, .site-frontpage-jumbo, .site-doc-jumbo, .site-footer {
+  color: $main-color5;
+  background-color: $main-color1;
+  margin-bottom: 0;
+}
+
 .site-header {
-  // height: 54px;
-  // .site-nav {
-  //   height:inherit;
-  // }
+  .site-header-nav {
+    .nav-link {
+      color: $main-color5;
+    }
+  }
 }
 
 .site-frontpage-jumbo {
@@ -21,16 +28,19 @@ html, body {
 
   .card {
     background-color: transparent;
+    color: $main-color4;
     border-width: 0 0 0 2px;
   }
 }
 
-.site-doc-jumbo {
-  margin-bottom: 0;
-}
 
-.site-frontpage-jumbo, .site-doc-jumbo {
-  background-color: $main-color1;
+.site-frontpage-example {
+  padding: 3rem 0;
+  background-color: $main-color4;
+  color: $main-color1;
+  pre, code {
+    height: 100%;
+  }
 }
 
 .site-doc-nav, .site-doc-page {
@@ -48,6 +58,9 @@ html, body {
   }
 }
 
-.site-footer-heading, .site-footer-sub {
-  padding: 1rem 0 0;
+.site-footer {
+
+  .site-footer-heading, .site-footer-sub {
+    padding: 1rem 0 0;
+  }
 }
