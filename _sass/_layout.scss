@@ -13,10 +13,15 @@ html, body {
   // }
 }
 
-.site-main-jumbo {
+.site-frontpage-jumbo {
   min-height: 30rem;
-  .site-main-jumbo-header {
+  .site-frontpage-jumbo-header {
     margin-bottom: 8rem;
+  }
+
+  .card {
+    background-color: transparent;
+    border-width: 0 0 0 2px;
   }
 }
 
@@ -24,7 +29,7 @@ html, body {
   margin-bottom: 0;
 }
 
-.site-main-jumbo, .site-doc-jumbo {
+.site-frontpage-jumbo, .site-doc-jumbo {
   background-color: $main-color1;
 }
 
