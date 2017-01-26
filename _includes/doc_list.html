@@ -1,0 +1,7 @@
+<ul>
+  {% assign sections = site[include.collection] | sort: 'order' %}
+  {% for section in sections %}
+  <li><a href="">{{section.title}}</a></li>
+  {% endfor %}
+
+</ul>

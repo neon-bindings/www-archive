@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+      {% include header.html %}
+
+      <div class="jumbotron jumbotron-fluid site-doc-jumbo">
+        <div class="container">
+          {% assign temp = site.collections | where:"label", page.collection %}
+          {% assign collection = temp[0] %}
+          <h2>{{ collection.title }}</h2>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 site-doc-nav">
+            {% include doc_list.html collection=page.collection %}
+          </div>
+          <div class="col-md-9 site-doc-page">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+
+      {% include footer.html %}
+  </body>
+
+</html>

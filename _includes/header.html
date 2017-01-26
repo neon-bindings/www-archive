@@ -1,0 +1,25 @@
+<header class="container-fluid site-header">
+  <nav class="navbar navbar-full navbar-light navbar-toggleable-md site-header-nav">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand site-nav-brand" href="{{ site.baseurl }}/">
+      {{ site.title }}
+    </a>
+    <!-- Temp: Add Invisible Navbar to Push Links to Right -->
+    <div class="collapse navbar-collapse float-md-right" id="navbarSupportedContent">
+      <ul class="nav navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav site-header-nav-links">
+        <li class="nav-item">
+          <a href="/starter/installation" class="nav-link">Getting started</a>
+        </li>
+        <li class="nav-item">
+          <a href="/guide/foo" class="nav-link">Guide</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">API reference</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

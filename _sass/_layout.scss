@@ -1,0 +1,74 @@
+/*
+* Html Layout
+*/
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.site-header, .site-frontpage-jumbo, .site-doc-jumbo, .site-footer {
+  color: $main-color5;
+  background-color: $main-color1;
+  margin-bottom: 0;
+}
+
+.site-header {
+  .site-header-nav {
+    .site-nav-brand {
+      color: $main-color5;
+      text-shadow: 0 0 11px #1BFF9580;
+    }
+    .nav-link {
+      color: $main-color5;
+    }
+  }
+}
+
+.site-brand-glow {
+  // text-shadow: 0 0 11px #1BFF9580;
+}
+
+.site-frontpage-jumbo {
+  min-height: 30rem;
+  .site-frontpage-jumbo-header {
+    margin-bottom: 8rem;
+  }
+
+  .card {
+    background-color: transparent;
+    color: $main-color4;
+    border-width: 0 0 0 2px;
+  }
+}
+
+
+.site-frontpage-example {
+  padding: 3rem 0;
+  background-color: $main-color4;
+  color: $main-color1;
+  pre, code {
+    height: 100%;
+  }
+}
+
+.site-doc-nav, .site-doc-page {
+  padding:3rem;
+}
+
+.site-doc-nav {
+  background-color: #afafaf;
+
+  ul {
+    list-style: none;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.site-footer {
+
+  .site-footer-heading, .site-footer-sub {
+    padding: 1rem 0 0;
+  }
+}
