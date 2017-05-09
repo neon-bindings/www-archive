@@ -287,7 +287,7 @@
     <div class=contents>
       <h1>Easy Parallelism</h1>
 
-      <p>Safely run multithreaded Rust, which is easy with convenient parallel APIs like <a href="https://github.com/nikomatsakis/rayon">Rayon</a>.<p>
+      <p>Safely run multiple threads, which is easy with convenient Rust APIs like <a href="https://github.com/nikomatsakis/rayon">Rayon</a>.<p>
 
       <pre>lines.<span class=fn>into_par_iter</span>()             <span class=comment>// iterate in parallel</span>
      .<span class=fn>map</span>(|line| <span class=fn>wc</span>(line, word))  <span class=comment>// count words for each</span>
