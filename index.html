@@ -35,9 +35,9 @@ layout: home
     <pre><span class=kw>fn</span> <span class=fn>hello</span>(call: Call) &rarr; JsResult&lt;JsString&gt; {
 <span class=comment>// safely tracked throughout this function!</span>
 <span class=kw>let</span> val = JsString::<span class=fn>new</span>(call.scope, <span class=str>"hello, Node"</span>)
-                    .<span class=fn>unwrap</span>();
-<span class=comment>...</span>
-Ok(val)
+                   .<span class=fn>unwrap</span>();
+    <span class=comment>...</span>
+    Ok(val)
 }</pre>
 </div>
 </section>
@@ -49,8 +49,8 @@ Ok(val)
     <p>Safely run multiple threads, which is easy with convenient Rust APIs like <a href="https://github.com/nikomatsakis/rayon">Rayon</a>.<p>
 
     <pre>lines.<span class=fn>into_par_iter</span>()             <span class=comment>// iterate in parallel</span>
-    .<span class=fn>map</span>(|line| <span class=fn>wc</span>(line, word))  <span class=comment>// count words for each</span>
-    .<span class=fn>sum</span>()                       <span class=comment>// calculate the total</span></pre>
+     .<span class=fn>map</span>(|line| <span class=fn>wc</span>(line, word))  <span class=comment>// count words for each</span>
+     .<span class=fn>sum</span>()                       <span class=comment>// calculate the total</span></pre>
 
 </div>
 </section>
